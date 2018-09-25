@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns="http://www.springframework.org/schema/beans" xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+       http://www.springframework.org/schema/tx
+       http://www.springframework.org/schema/tx/spring-tx.xsd
+	   http://www.springframework.org/schema/context
+	   http://www.springframework.org/schema/context/spring-context-3.0.xsd
+	   http://www.springframework.org/schema/mvc
+	   http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+    <!-- 静态资源的访问 -->
+    <mvc:resources location="/images/" mapping="/images/**"></mvc:resources>
+    <mvc:resources location="/css/" mapping="/css/**"></mvc:resources>
+    <mvc:resources location="/js/" mapping="/js/**"></mvc:resources>
+    <mvc:resources location="/img/" mapping="/img/**"></mvc:resources>
+
+    <!-- 配置文件启动 -->
+    <bean id="propertyPlaceholderConfigurer_fc_service"
+          class="tourism.base.loadconfig.MyPlaceholderConfigurer">
+        <property name="ignoreUnresolvablePlaceholders" value="true"/>
+        <property name="locations">
+            <list>
+                <value>file:/d:/web/profile/SharingTourism/configure.properties</value>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="mySessionFactory_tourism_rpt" class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
+        <property name="configLocation" value="classpath:/META-INF/hibernate_tourism.cfg.xml"></property>
+        <property name="dataSource">
+            <ref bean="dataSource"/>
+        </property>
+        <property name="hibernateProperties">
+            <value>
+                hibernate.show_sql=true
+                hibernate.format_sql=true
+                hibernate.hbm2ddl.auto=create
+                hibernate.jdbc.fetch_size=50
+                hibernate.jdbc.batch_size=50
+            </value>
+        </property>
+    </bean>
+
+    <bean id="dataSource" class="com.zaxxer.hikari.HikariDataSource" destroy-method="close">
+        <constructor-arg>
+            <bean class="com.zaxxer.hikari.HikariConfig">
+                <!--<property name="dataSourceClassName" value="oracle.jdbc.pool.OracleDataSource"/>-->
+                <!-- oracle 版本太低 使用 替代方案 driverClassName -->
+                <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+                <property name="jdbcUrl" value="${jdbcUrl}"/>
+                <property name="username" value="${username}"/>
+                <property name="password" value="${password}"/>
+                <property name="connectionTestQuery" value="select 1 from dual"/>
+                <property name="connectionTimeout" value="15000"/>
+                <property name="idleTimeout" value="600000"/>
+                <property name="maxLifetime" value="1800000"/>
+                <property name="maximumPoolSize" value="${maximumPoolSize}"/>
+                <property name="minimumIdle" value="${minimumIdle}"/>
+            </bean>
+        </constructor-arg>
+    </bean>
+    <bean id="myHibernateTemplet_easyTravel_rpt" class="org.springframework.orm.hibernate3.HibernateTemplate">
+        <constructor-arg>
+            <ref bean="mySessionFactory_tourism_rpt"/>
+        </constructor-arg>
+    </bean>
+
+    <bean id="myTxManager_shareprofit" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+        <property name="sessionFactory" ref="mySessionFactory_tourism_rpt"></property>
+    </bean>
+
+    <tx:annotation-driven transaction-manager="myTxManager_shareprofit"/>
+
+    <context:component-scan base-package="tourism">
+        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+    </context:component-scan>
+
+</beans>

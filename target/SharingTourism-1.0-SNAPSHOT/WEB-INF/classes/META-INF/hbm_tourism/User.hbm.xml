@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping  default-access="field">
+
+    <class name="tourism.bean.User" table="user" schema="tourism">
+        <id name="id" access="property">
+            <column name="id" not-null="true">
+                <comment>主键</comment>
+            </column>
+        </id>
+        <property name="createTime" type="timestamp" update="false">
+            <column name="create_time" sql-type="date" not-null="true" default="systimestamp">
+                <comment>创建时间</comment>
+            </column>
+        </property>
+        <property name="userNo" column="userno"/>
+        <property name="nickName" column="nickname"/>
+        <property name="password" column="password"/>
+        <property name="phoneNumber" column="phonenumber"/>
+        <property name="email" column="email"/>
+    </class>
+</hibernate-mapping>
