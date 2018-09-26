@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ffcd59f-fb1a-4e73-910f-69b756f36aac" name="Default" comment="测试">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SharingTourism-1.0-SNAPSHOT/WEB-INF/classes/tourism/controller/UserController.class" afterPath="$PROJECT_DIR$/target/SharingTourism-1.0-SNAPSHOT/WEB-INF/classes/tourism/controller/UserController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/tourism/controller/UserController.class" afterPath="$PROJECT_DIR$/target/classes/tourism/controller/UserController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tourism/controller/UserController.java" afterPath="$PROJECT_DIR$/src/main/java/tourism/controller/UserController.java" />
     </list>
@@ -70,8 +68,8 @@
       <file leaf-file-name="UserController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/tourism/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+            <state relative-caret-position="440">
+              <caret line="22" column="8" lean-forward="false" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -438,7 +436,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15429688" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -913,7 +911,7 @@
       <updated>1537847145643</updated>
       <workItem from="1537847147014" duration="8040000" />
       <workItem from="1537860816258" duration="199000" />
-      <workItem from="1537928630715" duration="1937000" />
+      <workItem from="1537928630715" duration="2429000" />
     </task>
     <task id="LOCAL-00001" summary="测试">
       <created>1537860251580</created>
@@ -922,7 +920,14 @@
       <option name="project" value="LOCAL" />
       <updated>1537860251580</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="测试">
+      <created>1537932721819</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1537932721819</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -952,7 +957,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12257000" />
+    <option name="totallyTimeSpent" value="12749000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="3" width="1936" height="1053" extended-state="0" />
@@ -1603,8 +1608,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tourism/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+        <state relative-caret-position="440">
+          <caret line="22" column="8" lean-forward="false" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
