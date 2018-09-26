@@ -16,7 +16,7 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @RequestMapping("/registy.do")
+    @RequestMapping(value = "/registy.do", produces = "text/html; charset=UTF-8")
     public ModelAndView registy(String nickName,String userNo,String password,String phoneNumber,String email){
         User user = new User(userNo,nickName,password,phoneNumber,email);
         userService.put(user);
