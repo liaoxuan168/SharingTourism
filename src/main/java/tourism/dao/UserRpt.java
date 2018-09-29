@@ -9,4 +9,6 @@ import tourism.bean.User;
  */
 public interface UserRpt {
     void put(User user);
+
+    User login(String userNo,String password);
 }

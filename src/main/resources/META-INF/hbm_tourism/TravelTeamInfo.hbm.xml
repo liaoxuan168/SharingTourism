@@ -4,7 +4,7 @@
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping default-access="field">
 
-    <class name="tourism.bean.User" table="user" schema="tourism">
+    <class name="tourism.bean.TravelTeamInfo" table="TravelTeamInfo" schema="tourism">
         <id name="id" access="property">
             <column name="id" not-null="true">
                 <comment>主键</comment>
@@ -15,29 +15,29 @@
                 <comment>创建时间</comment>
             </column>
         </property>
-        <property name="userNo">
-            <column name="userno" not-null="true">
-                <comment>用户编号</comment>
+        <property name="travelName" not-null="true">
+            <column name="travelName">
+                <comment>旅行团名称</comment>
             </column>
         </property>
-        <property name="nickName">
-            <column name="nickname" not-null="true">
-                <comment>用户昵称</comment>
+        <property name="phone" not-null="true">
+            <column name="phone">
+                <comment>旅行团联系电话</comment>
             </column>
         </property>
-        <property name="password">
-            <column name="password" not-null="true">
-                <comment>密码</comment>
+        <property name="travelNo" not-null="true">
+            <column name="travelNo">
+                <comment>旅行团编号</comment>
             </column>
         </property>
-        <property name="phoneNumber">
-            <column name="phonenumber">
-                <comment>手机号</comment>
+        <property name="travelHead">
+            <column name="travelHead">
+                <comment>旅行团头像图片</comment>
             </column>
         </property>
-        <property name="email">
-            <column name="email">
-                <comment>Email邮箱地址</comment>
+        <property name="able">
+            <column name="able">
+                <comment>旅行团是否可用</comment>
             </column>
         </property>
     </class>

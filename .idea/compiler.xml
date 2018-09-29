@@ -9,8 +9,8 @@
         <module name="SharingTourism" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="SharingTourism" target="1.6" />
+    <bytecodeTargetLevel target="1.8">
+      <module name="SharingTourism" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

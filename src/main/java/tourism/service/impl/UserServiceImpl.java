@@ -20,4 +20,9 @@ public class UserServiceImpl implements UserService{
     public void put(User user) {
       userRpt.put(user);
     }
+
+    @Override
+    public User login(String userNo, String password) {
+        return userRpt.login(userNo, password);
+    }
 }

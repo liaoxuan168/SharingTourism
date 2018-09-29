@@ -20,7 +20,6 @@ public class UserController {
     public ModelAndView registy(String nickName,String userNo,String password,String phoneNumber,String email){
         User user = new User(userNo,nickName,password,phoneNumber,email);
         userService.put(user);
-
         return new ModelAndView("index");
     }
 }

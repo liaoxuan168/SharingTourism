@@ -8,4 +8,6 @@ import tourism.bean.User;
  */
 public interface UserService {
     void put(User user);
+
+    User login(String userNo,String password);
 }
