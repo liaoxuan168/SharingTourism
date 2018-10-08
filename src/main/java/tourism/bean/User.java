@@ -14,13 +14,15 @@ public class User {
     private String password;
     private String phoneNumber;
     private String email;
+    private boolean able;
 
-    public User(String userNo, String nickName, String password, String phoneNumber, String email) {
+    public User(String userNo, String nickName, String password, String phoneNumber, String email, boolean able) {
         this.userNo = userNo;
         this.nickName = nickName;
         this.password = password;
         this.phoneNumber = phoneNumber;
         this.email = email;
+        this.able = able;
     }
 
     public User() {
@@ -80,5 +82,13 @@ public class User {
 
     public Timestamp getCreateTime() {
         return createTime;
+    }
+
+    public boolean isAble() {
+        return able;
+    }
+
+    public void setAble(boolean able) {
+        this.able = able;
     }
 }

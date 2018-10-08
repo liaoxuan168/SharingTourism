@@ -4,7 +4,7 @@
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping default-access="field">
 
-    <class name="tourism.bean.User" table="user" schema="tourism">
+    <class name="tourism.bean.TravelLineInfo" table="TravelLineInfo" schema="tourism">
         <id name="id" access="property">
             <column name="id" not-null="true">
                 <comment>主键</comment>
@@ -15,34 +15,36 @@
                 <comment>创建时间</comment>
             </column>
         </property>
-        <property name="userNo" type="java.lang.String" not-null="true" unique="true">
-            <column name="userno" not-null="true">
-                <comment>用户编号</comment>
+        <property name="pathNo" not-null="true" type="java.lang.String">
+            <column name="pathNo">
+                <comment>路线编号</comment>
             </column>
         </property>
-        <property name="nickName" type="java.lang.String" not-null="true">
-            <column name="nickname" not-null="true">
-                <comment>用户昵称</comment>
+        <property name="travelNo" not-null="true" type="java.lang.String">
+            <column name="travelNo">
+                <comment>旅行团编号</comment>
             </column>
         </property>
-        <property name="password" type="java.lang.String" not-null="true">
-            <column name="password" not-null="true">
-                <comment>密码</comment>
+        <property name="travelNo" not-null="true" type="java.lang.String">
+            <column name="travelNo">
+                <comment>旅行团编号</comment>
             </column>
         </property>
-        <property name="phoneNumber" type="java.lang.String">
-            <column name="phonenumber">
-                <comment>手机号</comment>
+        <property name="pathName" type="java.lang.String">
+            <column name="pathName">
+                <comment>路线名称</comment>
             </column>
         </property>
-        <property name="email" type="java.lang.String">
-            <column name="email">
-                <comment>Email邮箱地址</comment>
+        
+        <property name="amount" type="java.lang.Double" not-null="true">
+            <column name="amount">
+                <comment>消费金额</comment>
             </column>
         </property>
+        
         <property name="able" type="boolean">
             <column name="able" default="true">
-                <comment>用户是否可用</comment>
+                <comment>旅行团是否可用</comment>
             </column>
         </property>
     </class>

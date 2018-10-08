@@ -15,28 +15,28 @@
                 <comment>创建时间</comment>
             </column>
         </property>
-        <property name="travelName" not-null="true">
+        <property name="travelName" not-null="true" type="java.lang.String">
             <column name="travelName">
                 <comment>旅行团名称</comment>
             </column>
         </property>
-        <property name="phone" not-null="true">
+        <property name="phone" not-null="true" type="java.lang.String">
             <column name="phone">
                 <comment>旅行团联系电话</comment>
             </column>
         </property>
-        <property name="travelNo" not-null="true">
+        <property name="travelNo" not-null="true" type="java.lang.String">
             <column name="travelNo">
                 <comment>旅行团编号</comment>
             </column>
         </property>
-        <property name="travelHead">
+        <property name="travelHead" type="java.lang.String">
             <column name="travelHead">
                 <comment>旅行团头像图片</comment>
             </column>
         </property>
-        <property name="able">
-            <column name="able">
+        <property name="able" type="boolean">
+            <column name="able" default="true">
                 <comment>旅行团是否可用</comment>
             </column>
         </property>
