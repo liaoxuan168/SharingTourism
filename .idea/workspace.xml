@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5ffcd59f-fb1a-4e73-910f-69b756f36aac" name="Default" comment="测试">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tourism/base/BaseRpt.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tourism/base/loadconfig/MyPlaceholderConfigurer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tourism/base/lock/DBLockMode.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tourism/base/rptimpl/HibernateRptImpl$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tourism/base/rptimpl/HibernateRptImpl$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tourism/base/rptimpl/HibernateRptImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tourism/bean/User.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tourism/controller/UserController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tourism/dao/UserRpt.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tourism/dao/impl/UserRptImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tourism/service/UserService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tourism/service/impl/UserServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tourism/utils/ClassUtils$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tourism/utils/ClassUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tourism/utils/StringUtils.class" afterPath="" />
+    <list default="true" id="5ffcd59f-fb1a-4e73-910f-69b756f36aac" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -1305,7 +1290,7 @@
       <workItem from="1537847147014" duration="8040000" />
       <workItem from="1537860816258" duration="199000" />
       <workItem from="1537928630715" duration="2429000" />
-      <workItem from="1538979639429" duration="98000" />
+      <workItem from="1538979639429" duration="129000" />
     </task>
     <task id="LOCAL-00001" summary="测试">
       <created>1537860251580</created>
@@ -1328,7 +1313,14 @@
       <option name="project" value="LOCAL" />
       <updated>1538979717499</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="修改">
+      <created>1538979761065</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1538979761065</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1358,7 +1350,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29312000" />
+    <option name="totallyTimeSpent" value="29343000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="3" width="1936" height="1053" extended-state="0" />
@@ -1481,7 +1473,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="测试" />
     <MESSAGE value="git忽略" />
-    <option name="LAST_COMMIT_MESSAGE" value="git忽略" />
+    <MESSAGE value="修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
