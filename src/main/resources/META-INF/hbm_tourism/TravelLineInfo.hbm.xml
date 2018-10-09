@@ -15,29 +15,29 @@
                 <comment>创建时间</comment>
             </column>
         </property>
-        <property name="pathNo" not-null="true" type="java.lang.String">
-            <column name="pathNo">
+        <property name="pathNo" type="java.lang.String">
+            <column name="pathNo" not-null="true">
                 <comment>路线编号</comment>
             </column>
         </property>
-        <property name="travelNo" not-null="true" type="java.lang.String">
-            <column name="travelNo">
+        <property name="travelNo" type="java.lang.String">
+            <column name="travelNo" not-null="true">
                 <comment>旅行团编号</comment>
             </column>
         </property>
-        <property name="travelNo" not-null="true" type="java.lang.String">
-            <column name="travelNo">
+        <property name="travelNo" type="java.lang.String">
+            <column name="travelNo" not-null="true">
                 <comment>旅行团编号</comment>
             </column>
         </property>
         <property name="pathName" type="java.lang.String">
-            <column name="pathName">
+            <column name="pathName" not-null="true">
                 <comment>路线名称</comment>
             </column>
         </property>
         
-        <property name="amount" type="java.lang.Double" not-null="true">
-            <column name="amount">
+        <property name="amount" type="java.lang.Double">
+            <column name="amount" not-null="true">
                 <comment>消费金额</comment>
             </column>
         </property>

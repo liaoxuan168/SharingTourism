@@ -15,17 +15,17 @@
                 <comment>创建时间</comment>
             </column>
         </property>
-        <property name="userNo" type="java.lang.String" not-null="true" unique="true">
+        <property name="userNo" type="java.lang.String" unique="true">
             <column name="userno" not-null="true">
                 <comment>用户编号</comment>
             </column>
         </property>
-        <property name="nickName" type="java.lang.String" not-null="true">
+        <property name="nickName" type="java.lang.String">
             <column name="nickname" not-null="true">
                 <comment>用户昵称</comment>
             </column>
         </property>
-        <property name="password" type="java.lang.String" not-null="true">
+        <property name="password" type="java.lang.String">
             <column name="password" not-null="true">
                 <comment>密码</comment>
             </column>

@@ -1,23 +1,17 @@
 package tourism.bean;
 
-import java.sql.Timestamp;
-
 /**
  * @author liaoxuan
  * @date 2018-10-8-0008.
  */
-public class TravelLineInfo {
-    private int id;
-    private Timestamp createTime = new Timestamp(System.currentTimeMillis());
+public class TravelLineInfo extends BaseEntity{
     private String pathNo;
     private String travelNo;
     private String pathName;
     private double amount;
     private boolean able;
 
-    public TravelLineInfo(int id, Timestamp createTime, String pathNo, String travelNo, String pathName, double amount, boolean able) {
-        this.id = id;
-        this.createTime = createTime;
+    public TravelLineInfo(String pathNo, String travelNo, String pathName, double amount, boolean able) {
         this.pathNo = pathNo;
         this.travelNo = travelNo;
         this.pathName = pathName;
@@ -26,22 +20,6 @@ public class TravelLineInfo {
     }
 
     public TravelLineInfo() {
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public Timestamp getCreateTime() {
-        return createTime;
-    }
-
-    public void setCreateTime(Timestamp createTime) {
-        this.createTime = createTime;
     }
 
     public String getPathNo() {

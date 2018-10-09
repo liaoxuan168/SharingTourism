@@ -1,22 +1,19 @@
 package tourism.bean;
 
-import java.sql.Timestamp;
-
 /**
+ * 旅游团队信息
  * @author liaoxuan
  * @date 2018-9-28-0028.
  */
-public class TravelTeamInfo {
-    private int id;
-    private Timestamp createTime = new Timestamp(System.currentTimeMillis());
+public class TravelTeamInfo extends BaseEntity{
+    /**主键*/
     private String travelName;
     private String phone;
     private String travelNo;
     private String travelHead;
     private boolean able;
 
-    public TravelTeamInfo(int id, String travelName, String phone, String travelNo, String travelHead, boolean able) {
-        this.id = id;
+    public TravelTeamInfo( String travelName, String phone, String travelNo, String travelHead, boolean able) {
         this.travelName = travelName;
         this.phone = phone;
         this.travelNo = travelNo;
@@ -25,14 +22,6 @@ public class TravelTeamInfo {
     }
 
     public TravelTeamInfo() {
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getTravelName() {
@@ -73,13 +62,5 @@ public class TravelTeamInfo {
 
     public void setAble(boolean able) {
         this.able = able;
-    }
-
-    public Timestamp getCreateTime() {
-        return createTime;
-    }
-
-    public void setCreateTime(Timestamp createTime) {
-        this.createTime = createTime;
     }
 }

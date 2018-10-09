@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping default-access="field">
+
+    <class name="tourism.bean.TravelScenicsInfo" table="TravelScenicsInfo" schema="tourism">
+        <id name="id" access="property">
+            <column name="id" not-null="true">
+                <comment>主键</comment>
+            </column>
+        </id>
+        <property name="createTime" type="timestamp" update="false">
+            <column name="create_time" sql-type="date" not-null="true" default="systimestamp">
+                <comment>创建时间</comment>
+            </column>
+        </property>
+        <property name="pathNo" type="java.lang.String">
+            <column name="pathNo" not-null="true">
+                <comment>路线编号</comment>
+            </column>
+        </property>
+        <property name="scenicSpotName" type="java.lang.String">
+            <column name="scenicSpotName" not-null="true">
+                <comment>景点名称</comment>
+            </column>
+        </property>
+        <property name="scenicSpotImage" type="java.lang.String">
+            <column name="scenicSpotImage" not-null="true">
+                <comment>景点图片</comment>
+            </column>
+        </property>
+        <property name="amount" type="java.lang.Double">
+            <column name="amount" not-null="true">
+                <comment>消费价格</comment>
+            </column>
+        </property>
+        <property name="remark" type="java.lang.String">
+            <column name="remark">
+                <comment>备注</comment>
+            </column>
+        </property>
+        <property name="province" type="java.lang.String">
+            <column name="province" not-null="true">
+                <comment>景点省份</comment>
+            </column>
+        </property>
+        <property name="city" type="java.lang.String">
+            <column name="city" not-null="true">
+                <comment>景点市区</comment>
+            </column>
+        </property>
+        <property name="scenicSpotIntroduce" type="java.lang.String">
+            <column name="scenicSpotIntroduce">
+                <comment>景点介绍</comment>
+            </column>
+        </property>
+        <property name="able" type="boolean">
+            <column name="able" default="true">
+                <comment>景点是否可用</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,14 +1,11 @@
 package tourism.bean;
 
-import java.sql.Timestamp;
 
 /**
  * @author liaoxuan
  * @date 2018-4-11-0011.
  */
-public class User {
-    private int id;
-    private Timestamp createTime = new Timestamp(System.currentTimeMillis());
+public class User extends BaseEntity{
     private String userNo;
     private String nickName;
     private String password;
@@ -26,18 +23,6 @@ public class User {
     }
 
     public User() {
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public void setCreateTime(Timestamp createTime) {
-        this.createTime = createTime;
     }
 
     public void setUserNo(String userNo) {
@@ -78,10 +63,6 @@ public class User {
 
     public String getEmail() {
         return email;
-    }
-
-    public Timestamp getCreateTime() {
-        return createTime;
     }
 
     public boolean isAble() {
