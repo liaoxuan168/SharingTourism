@@ -13,13 +13,12 @@ public class User extends BaseEntity{
     private String email;
     private boolean able;
 
-    public User(String userNo, String nickName, String password, String phoneNumber, String email, boolean able) {
+    public User(String userNo, String nickName, String password, String phoneNumber, String email) {
         this.userNo = userNo;
         this.nickName = nickName;
         this.password = password;
         this.phoneNumber = phoneNumber;
         this.email = email;
-        this.able = able;
     }
 
     public User() {
